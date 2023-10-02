@@ -29,7 +29,6 @@ public class SwitchScreenStepDefinitions {
     public void elUsuarioEstaEnSwitchScreen(String actor) {
         theActorCalled(actor).attemptsTo(
                  WaitUntil.the(CARD_BUTTONS_DEMO, isVisible()).forNoMoreThan(5).seconds(),
-               // Scroll.untilVisibleTarget(CARD_SWITCH).untilMaxAttempts(3),
                 ScrollFlutterLargo.toDown(),
                 Click.on(CARD_SWITCH));
     }
